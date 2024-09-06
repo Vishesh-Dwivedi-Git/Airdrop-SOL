@@ -19,7 +19,7 @@ function App() {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat filter blur-lg"
-          style={{ backgroundImage: "url('./big-data-concept-background_52683-24459.avif')" }}
+          style={{ backgroundImage: "url('./big-data-concept-background_52683-24459.jpg" }}
         ></div>
         
         {/* Dark Overlay */}

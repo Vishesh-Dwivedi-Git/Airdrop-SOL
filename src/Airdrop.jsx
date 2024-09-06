@@ -23,10 +23,22 @@ const Airdrop = () => {
     }
 
     return (
-        <div>
-            <p>Hi, {wallet.publicKey ? wallet.publicKey.toString() : "please connect your wallet!"}</p>
-            <input id="publickey" type="text" placeholder='Enter the amount of SOL'/>
-            <button onClick={sendAirdropToUser}>Send Airdrop</button>
+        <div className="flex flex-col items-center space-y-4">
+            <p className="text-white text-2xl font-semibold">
+                Hi, {wallet.publicKey ? wallet.publicKey.toString() : "Please connect your wallet!"}
+            </p>
+            <input
+                id="publickey"
+                type="text"
+                placeholder="Enter the amount of SOL"
+                className="w-full max-w-sm p-2 border-2 border-blue-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <button
+                className="px-6 py-2 text-white text-lg  hover:bg-customPurple rounded-lg transition-colors duration-300"
+                onClick={sendAirdropToUser}
+            >
+                Send Airdrop
+            </button>
         </div>
     );
 };

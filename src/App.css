@@ -1,0 +1,19 @@
+.animated-border {
+    border: 1px solid;
+    border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    animation: borderAnimation 5s infinite;
+    border-radius: 10px; /* Optional: add rounded corners */
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    }
+    50% {
+      border-image: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red) 1;
+    }
+    100% {
+      border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    }
+  }
+  

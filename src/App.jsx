@@ -19,7 +19,7 @@ function App() {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat filter blur-lg"
-          style={{ backgroundImage: "url('big-data-concept-background_52683-24459.avif')" }}
+          style={{ backgroundImage: "url('./big-data-concept-background_52683-24459.avif')" }}
         ></div>
         
         {/* Dark Overlay */}
@@ -28,7 +28,7 @@ function App() {
 
       {/* Wallet Interface */}
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className=" bg-opacity-80 p-8 rounded-lg shadow-lg">
+        <div className=" bg-opacity-80 p-8 rounded-lg shadow-lg animated-border">
           <ConnectionProvider endpoint={endpoint}>
             <WalletProvider wallets={[new UnsafeBurnerWalletAdapter()]} autoConnect>
               <WalletModalProvider>

@@ -4,6 +4,8 @@ import { WalletModalProvider, WalletDisconnectButton, WalletMultiButton } from '
 import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { clusterApiUrl } from '@solana/web3.js';
 import Airdrop from './Airdrop';
+import Cbalance from './Cbalance';
+import Sendsol from './Sendsol';
 
 // Import necessary styles
 import '@solana/wallet-adapter-react-ui/styles.css';
@@ -42,6 +44,12 @@ function App() {
                   {/* Displaying other content */}
                   <div>
                     <Airdrop />
+                  </div>
+                  <div>
+                    <Cbalance/>
+                  </div>
+                  <div>
+                    <Sendsol/>
                   </div>
                 </div>
               </WalletModalProvider>
